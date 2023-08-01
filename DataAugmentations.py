@@ -68,7 +68,7 @@ class Cifar10Dataset(torchvision.datasets.CIFAR10):
 
 train_data = Cifar10Dataset(root='../data', train=True, download=False, transform=train_transforms)
 
-test_data = Cifar10Dataset(root='../data', train=False,download=False, transform=train_transforms)
+test_data = Cifar10Dataset(root='../data', train=False,download=False, transform=test_transform)
 
 
 dataloader_args = dict(shuffle=True, batch_size=512, num_workers=2, pin_memory=True)                                      
